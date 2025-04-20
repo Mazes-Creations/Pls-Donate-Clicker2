@@ -17,12 +17,12 @@ Layout
 	use default
 		
 Buttons
-	*bunnyButton
-		name:Make a bunny
-		desc:Click this little bunny to get more bunnies!
+	*booth
+		name:Pls Donate Booth
+		desc:People buy passes on your booth, and you get robux. This is your source of income at the moment.
 		on click:anim icon wobble
-		on click:yield 1 bunny
-		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+		on click:yield 0 robux
+		on click:if (have goldenTouch) yield 0.6 robux
 		icon:stuff/bunny.png
 		no text
 		class:bigButton hasFlares
@@ -31,16 +31,16 @@ Buttons
 		tooltip class:red
 		
 Resources
-	*bunny|bunnies
-		name:Bunny|Bunnies
-		desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
+	*robux
+		name: Robux
+		desc:This is your robux balance. Get as much robux as you can to get extremely rich!
 		icon:icons[0,0]
 		class:noBackground
 		show earned
 		
-	*goldenCarrot|goldenCarrots
-		name:Golden carrot|Golden carrots
-		desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
+	*ResearchPoint
+		name:RP
+		desc:Research Points are used to unlock lovely new upgrades that will help you earn even more robux!
 		icon:icons[0,1]
 		class:noBackground
 		hidden when 0
