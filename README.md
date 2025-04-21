@@ -19,18 +19,17 @@ Layout
 		
 Buttons
 	*bunnyButton
-		name:Make a bunny
-		desc:Click this little bunny to get more bunnies!
+		name:Pls Donate Booth
+		desc:People buy gamepasses from your stand and you get robux! Your only current source of income!
 		on click:anim icon wobble
-		on click:yield 1 bunny
-		on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+		on click:yield 0 robux
 		icon:stuff/bunny.png
-		no text
+		Your Stand
 		class:bigButton hasFlares
 		icon class:shadowed
 		tooltip origin:bottom
 		tooltip class:red
-		
+
 Resources
 	*bunny|bunnies
 		name:Bunny|Bunnies
@@ -151,6 +150,12 @@ Buildings
 Upgrades
 	*TEMPLATE
 		on click:anim glow
+
+	//starter gamepass upgrades
+ 
+  	*starterGamepass
+          cost:0 robux
+          passive:increase yield of robuxButton by 0.6
 	
 	//food upgrades
 	//inspiration : http://rabbit.org/suggested-vegetables-and-fruits-for-a-rabbit-diet/
