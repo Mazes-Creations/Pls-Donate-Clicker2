@@ -18,7 +18,7 @@ Layout
 	use default
 		
 Buttons
-	*bunnyButton
+	*booth
 		name:Pls Donate Booth
 		desc:People buy gamepasses from your stand and you get robux! Your only current source of income!
 		on click:anim icon wobble
